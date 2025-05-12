@@ -7,7 +7,7 @@ const Login = ({ isLoggedIn, setisLoggedIn }) => {
   return (
     <div>
       {!isLoggedIn && (
-        <div>
+        <form>
           <input type="text" />
           <input type="Password" />
           <button
@@ -17,7 +17,7 @@ const Login = ({ isLoggedIn, setisLoggedIn }) => {
           >
             Login
           </button>
-        </div>
+        </form>
       )}
       {isLoggedIn && <p>You are logged in!</p>}
     </div>
