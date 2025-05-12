@@ -1,13 +1,15 @@
-
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from "react";
+import "./../styles/App.css";
+import Login from "./Login";
 
 const App = () => {
+  const [isLoggedIn, setisLoggedIn] = useState(false);
   return (
     <div>
-        {/* Do not remove the main div */}
+      {/* Do not remove the main div */}
+      <Login isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
